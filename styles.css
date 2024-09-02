@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', 'Segoe UI', Roboto, Ubuntu, sans-serif;
+    color: rgb(129, 129, 129);
+}
+
+body {
+    background: #141414;
+}
+
+.header {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.header__title {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.profile {
+    text-align: center;
+    color: #b3b3b3;
+    cursor: pointer;
+}
+
+.profile__image {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.profile__image:hover {
+    transform: scale(1.1);
+    border: 2px solid white;
+}
+
+.profile__name {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.profile:hover .profile__name {
+    color: white;
+}
+
+.addProfileIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: grey;
+    font-size: 4em;
+    width: 120px;
+    height: 120px;
+    background-color: #333;
+    border-radius: 10px;
+    transition: transform 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.addProfileIcon:hover {
+    transform: scale(1.1);
+    border: 2px solid white;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer__manage {
+    padding: 15px 30px;
+    background-color: transparent;
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.footer__manage:hover {
+    color: #fff;
+    border-color: #fff;
+}
